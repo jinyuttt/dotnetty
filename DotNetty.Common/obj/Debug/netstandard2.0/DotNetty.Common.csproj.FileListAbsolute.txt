@@ -1,0 +1,12 @@
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\bin\Debug\netstandard2.0\DotNetty.Common.deps.json
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\bin\Debug\netstandard2.0\DotNetty.Common.dll
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\bin\Debug\netstandard2.0\DotNetty.Common.pdb
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\bin\Debug\netstandard2.0\DotNetty.Logging.dll
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\bin\Debug\netstandard2.0\DotNetty.Logging.pdb
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.csprojAssemblyReference.cache
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.AssemblyInfoInputs.cache
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.AssemblyInfo.cs
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.csproj.CopyComplete
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.dll
+E:\Study\vs\dotNetty\dotNetty\DotNetty.Common\obj\Debug\netstandard2.0\DotNetty.Common.pdb

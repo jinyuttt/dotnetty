@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Buffers\\DotNetty.Buffers.csproj": {}
+  },
+  "projects": {
+    "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Buffers\\DotNetty.Buffers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Buffers\\DotNetty.Buffers.csproj",
+        "projectName": "DotNetty.Buffers",
+        "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Buffers\\DotNetty.Buffers.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Buffers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj": {
+                "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj"
+              },
+              "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj": {
+                "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj",
+        "projectName": "DotNetty.Common",
+        "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj": {
+                "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[4.5.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj",
+        "projectName": "DotNetty.Logging",
+        "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
