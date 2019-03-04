@@ -1,8 +1,0 @@
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\bin\Debug\netstandard2.0\DotNetty.Logging.deps.json
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\bin\Debug\netstandard2.0\DotNetty.Logging.dll
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\bin\Debug\netstandard2.0\DotNetty.Logging.pdb
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\obj\Debug\netstandard2.0\DotNetty.Logging.csproj.CoreCompileInputs.cache
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\obj\Debug\netstandard2.0\DotNetty.Logging.AssemblyInfoInputs.cache
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\obj\Debug\netstandard2.0\DotNetty.Logging.AssemblyInfo.cs
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\obj\Debug\netstandard2.0\DotNetty.Logging.dll
-E:\Study\vs\dotNetty\dotNetty\DotNetty.Logging\obj\Debug\netstandard2.0\DotNetty.Logging.pdb

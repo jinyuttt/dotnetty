@@ -130,15 +130,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "ReadOnlyCollectionInterfaces/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/NET45/ReadOnlyCollectionsInterfaces.dll": {}
-        },
-        "runtime": {
-          "lib/NET45/ReadOnlyCollectionsInterfaces.dll": {}
-        }
-      },
       "runtime.native.System/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -239,18 +230,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/System.Collections.Immutable.dll": {}
-        }
-      },
-      "System.Collections.Immutable.Net40/1.0.30.17": {
-        "type": "package",
-        "dependencies": {
-          "ReadOnlyCollectionInterfaces": "[1.0.0]"
-        },
-        "compile": {
-          "lib/net40/System.Collections.Immutable.Net40.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Collections.Immutable.Net40.dll": {}
         }
       },
       "System.Collections.NonGeneric/4.0.1": {
@@ -1377,8 +1356,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "DotNetty.Buffers": "1.0.0",
-          "DotNetty.Transport": "1.0.0",
-          "System.Collections.Immutable.Net40": "1.0.30.17"
+          "DotNetty.Transport": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DotNetty.Codecs.dll": {}
@@ -1715,26 +1693,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "ReadOnlyCollectionInterfaces/1.0.0": {
-      "sha512": "GTdPbxic8eNjWdwP2GOzHI9HzAR1glM1DjimePZhld4MSA31mbJfEKwYlLx1s89oHbpQlgjyOaC95oFVivG8aw==",
-      "type": "package",
-      "path": "readonlycollectioninterfaces/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/NET20/ReadOnlyCollectionsInterfaces.XML",
-        "lib/NET20/ReadOnlyCollectionsInterfaces.dll",
-        "lib/NET20/ReadOnlyCollectionsInterfaces.pdb",
-        "lib/NET40-client/ReadOnlyCollectionsInterfaces.XML",
-        "lib/NET40-client/ReadOnlyCollectionsInterfaces.dll",
-        "lib/NET40-client/ReadOnlyCollectionsInterfaces.pdb",
-        "lib/NET45/ReadOnlyCollectionsInterfaces.XML",
-        "lib/NET45/ReadOnlyCollectionsInterfaces.dll",
-        "lib/NET45/ReadOnlyCollectionsInterfaces.pdb",
-        "readonlycollectioninterfaces.1.0.0.nupkg.sha512",
-        "readonlycollectioninterfaces.nuspec"
-      ]
-    },
     "runtime.native.System/4.0.0": {
       "sha512": "QfS/nQI7k/BLgmLrw7qm7YBoULEvgWnPI+cYsbfCVFTW8Aj+i8JhccxcFMu1RWms0YZzF+UHguNBK4Qn89e2Sg==",
       "type": "package",
@@ -1977,20 +1935,6 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
         "system.collections.immutable.1.2.0.nupkg.sha512",
         "system.collections.immutable.nuspec"
-      ]
-    },
-    "System.Collections.Immutable.Net40/1.0.30.17": {
-      "sha512": "Y1AmaGNWPBjBd1I3z4em8a6Cchf9uTKNEyhhTztW6yv8R18G0ed2+fAt6YY9AhGbvZZ6yg/2jpHyYDIcUp/6cg==",
-      "type": "package",
-      "path": "system.collections.immutable.net40/1.0.30.17",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/System.Collections.Immutable.Net40.dll",
-        "lib/System.Collections.Immutable.Net40.pdb",
-        "lib/net40/System.Collections.Immutable.Net40.dll",
-        "system.collections.immutable.net40.1.0.30.17.nupkg.sha512",
-        "system.collections.immutable.net40.nuspec"
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
@@ -5114,27 +5058,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用“.NETFramework,Version=v4.6.1”而不是项目目标框架“.NETStandard,Version=v2.0”还原包“ReadOnlyCollectionInterfaces 1.0.0”。此包可能与项目不完全兼容。",
-      "libraryId": "ReadOnlyCollectionInterfaces",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用“.NETFramework,Version=v4.6.1”而不是项目目标框架“.NETStandard,Version=v2.0”还原包“System.Collections.Immutable.Net40 1.0.30.17”。此包可能与项目不完全兼容。",
-      "libraryId": "System.Collections.Immutable.Net40",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

@@ -1,0 +1,4 @@
+E:\Study\vs\Http\HttpProtocol\HttpProtocol\obj\Debug\netstandard2.0\HttpProtocol.csprojAssemblyReference.cache
+E:\Study\vs\Http\HttpProtocol\HttpProtocol\obj\Debug\netstandard2.0\HttpProtocol.csproj.CoreCompileInputs.cache
+E:\Study\vs\Http\HttpProtocol\HttpProtocol\obj\Debug\netstandard2.0\HttpProtocol.AssemblyInfoInputs.cache
+E:\Study\vs\Http\HttpProtocol\HttpProtocol\obj\Debug\netstandard2.0\HttpProtocol.AssemblyInfo.cs

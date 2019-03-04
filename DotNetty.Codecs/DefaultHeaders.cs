@@ -11,7 +11,6 @@ namespace DotNetty.Codecs
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using System.Collections.Immutable;
     using System.Runtime.CompilerServices;
     using DotNetty.Common.Utilities;
 
@@ -189,7 +188,9 @@ namespace DotNetty.Codecs
         {
             if (this.IsEmpty)
             {
-                return ImmutableHashSet<TKey>.Empty;
+
+                //  return ImmutableHashSet<TKey>.Empty;
+                return new HashSet<TKey>();
             }
 
             var names = new HashSet<TKey>(this.hashingStrategy);

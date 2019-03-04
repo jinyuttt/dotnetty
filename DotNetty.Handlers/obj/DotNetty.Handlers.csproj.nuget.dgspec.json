@@ -122,10 +122,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Collections.Immutable.Net40": {
-              "target": "Package",
-              "version": "[1.0.30.17, )"
             }
           },
           "imports": [

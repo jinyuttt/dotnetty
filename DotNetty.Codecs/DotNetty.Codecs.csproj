@@ -13,10 +13,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable.Net40" Version="1.0.30.17" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DotNetty.Buffers\DotNetty.Buffers.csproj" />
     <ProjectReference Include="..\DotNetty.Transport\DotNetty.Transport.csproj" />
   </ItemGroup>
