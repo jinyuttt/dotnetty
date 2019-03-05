@@ -43,9 +43,9 @@ namespace DotNetty.Codecs.Http.WebSockets
             byte[] sha1 = WebSocketUtil.Sha1(Encoding.ASCII.GetBytes(acceptSeed));
             string accept = WebSocketUtil.Base64String(sha1);
 
-            if (Logger.DebugEnabled)
+            if (Logger.IsDebugEnabled)
             {
-                Logger.Debug("WebSocket version 13 server handshake key: {}, response: {}", key, accept);
+                Logger.DebugFormat("WebSocket version 13 server handshake key: {}, response: {}", key, accept);
             }
 
             res.Headers.Add(HttpHeaderNames.Upgrade, HttpHeaderValues.Websocket);
@@ -58,9 +58,9 @@ namespace DotNetty.Codecs.Http.WebSockets
                 string selectedSubprotocol = this.SelectSubprotocol(subprotocols.ToString());
                 if (selectedSubprotocol == null)
                 {
-                    if (Logger.DebugEnabled)
+                    if (Logger.IsDebugEnabled)
                     {
-                        Logger.Debug("Requested subprotocol(s) not supported: {}", subprotocols);
+                        Logger.DebugFormat("Requested subprotocol(s) not supported: {}", subprotocols);
                     }
                 }
                 else

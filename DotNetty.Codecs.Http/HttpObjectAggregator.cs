@@ -11,13 +11,13 @@ namespace DotNetty.Codecs.Http
     using System.Threading.Tasks;
     using DotNetty.Buffers;
     using DotNetty.Common;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
     using DotNetty.Transport.Channels;
 
     public class HttpObjectAggregator : MessageAggregator<IHttpObject, IHttpMessage, IHttpContent, IFullHttpMessage>
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<HttpObjectAggregator>();
+        static readonly Logger Logger = Logger.Singleton;
         static readonly IFullHttpResponse Continue = new DefaultFullHttpResponse(HttpVersion.Http11, HttpResponseStatus.Continue, Unpooled.Empty);
         static readonly IFullHttpResponse ExpectationFailed = new DefaultFullHttpResponse(HttpVersion.Http11, HttpResponseStatus.ExpectationFailed, Unpooled.Empty);
         static readonly IFullHttpResponse TooLargeClose = new DefaultFullHttpResponse(HttpVersion.Http11, HttpResponseStatus.RequestEntityTooLarge, Unpooled.Empty);

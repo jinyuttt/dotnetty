@@ -9,12 +9,12 @@ namespace DotNetty.Codecs.Http.Multipart
     using System.Text;
     using DotNetty.Buffers;
     using DotNetty.Common;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
 
     public abstract class AbstractDiskHttpData : AbstractHttpData
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<AbstractDiskHttpData>();
+        static readonly Logger Logger = Logger.Singleton;
 
         FileStream fileStream;
 
@@ -171,7 +171,7 @@ namespace DotNetty.Codecs.Http.Multipart
                 }
                 catch (Exception error)
                 {
-                    Logger.Warn("Failed to delete: {} {}", this.fileStream, error);
+                    Logger.WarnFormat("Failed to delete: {} {}", this.fileStream, error);
                 }
                 this.fileStream = null;
                 throw new IOException($"Out of size: {this.Size} > {this.DefinedSize}");

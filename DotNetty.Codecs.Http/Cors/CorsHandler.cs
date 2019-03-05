@@ -6,15 +6,15 @@ namespace DotNetty.Codecs.Http.Cors
     using System.Collections.Generic;
     using System.Diagnostics.Contracts;
     using System.Threading.Tasks;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
     using DotNetty.Transport.Channels;
 
     using static Common.Utilities.ReferenceCountUtil;
 
     public class CorsHandler : ChannelDuplexHandler
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<CorsHandler>();
+        static readonly Logger Logger = Logger.Singleton;
 
         internal static readonly AsciiString AnyOrigin = new AsciiString("*");
         internal static readonly AsciiString NullOrigin = new AsciiString("null");
@@ -100,7 +100,7 @@ namespace DotNetty.Codecs.Http.Cors
                 SetVaryHeader(response);
                 return true;
             }
-            Logger.Debug("Request origin [{}]] was not among the configured origins [{}]", origin, this.config.Origins);
+            Logger.DebugFormat("Request origin [{}]] was not among the configured origins [{}]", origin, this.config.Origins);
 
             return false;
         }

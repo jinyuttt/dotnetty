@@ -12,13 +12,13 @@ namespace DotNetty.Codecs.Http.WebSockets
     using System.Threading.Tasks;
     using DotNetty.Common.Concurrency;
     using DotNetty.Common.Internal;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
     using DotNetty.Transport.Channels;
 
     public abstract class WebSocketServerHandshaker
     {
-        protected static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<WebSocketServerHandshaker>();
+        protected static readonly Logger Logger = Logger.Singleton;
         static readonly ClosedChannelException ClosedChannelException = new ClosedChannelException();
 
         readonly string uri;
@@ -77,9 +77,9 @@ namespace DotNetty.Codecs.Http.WebSockets
 
         public void Handshake(IChannel channel, IFullHttpRequest req, HttpHeaders responseHeaders, TaskCompletionSource completion)
         {
-            if (Logger.DebugEnabled)
+            if (Logger.IsDebugEnabled)
             {
-                Logger.Debug("{} WebSocket version {} server handshake", channel, this.version);
+                Logger.DebugFormat("{} WebSocket version {} server handshake", channel, this.version);
             }
 
             IFullHttpResponse response = this.NewHandshakeResponse(req, responseHeaders);
@@ -138,9 +138,9 @@ namespace DotNetty.Codecs.Http.WebSockets
             {
                 return this.HandshakeAsync(channel, request, responseHeaders);
             }
-            if (Logger.DebugEnabled)
+            if (Logger.IsDebugEnabled)
             {
-                Logger.Debug("{} WebSocket version {} server handshake", channel, this.version);
+                Logger.DebugFormat("{} WebSocket version {} server handshake", channel, this.version);
             }
             IChannelPipeline p = channel.Pipeline;
             IChannelHandlerContext ctx = p.Context<HttpRequestDecoder>();

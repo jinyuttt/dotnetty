@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj",
-        "projectName": "DotNetty.Common",
+        "projectName": "DotNetty.Common.Lib",
         "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\DotNetty.Common.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
         "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Common\\obj\\",
@@ -27,10 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -73,7 +70,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj",
-        "projectName": "DotNetty.Logging",
+        "projectName": "DotNetty.Logging.Lib",
         "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj",
         "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
         "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\obj\\",
@@ -92,10 +89,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

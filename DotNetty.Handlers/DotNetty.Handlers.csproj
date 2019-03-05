@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>编译.net standard版本</Description>
+    <Authors>jinyu成都</Authors>
+    <PackageReleaseNotes>编译.net standard版本</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/jinyuttt/dotnetty.git</PackageProjectUrl>
+    <PackageId>DotNetty.Handlers.Lib</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

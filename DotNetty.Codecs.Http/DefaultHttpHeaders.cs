@@ -5,7 +5,6 @@ namespace DotNetty.Codecs.Http
 {
     using System;
     using System.Collections.Generic;
-    using System.Collections.Immutable;
     using System.Diagnostics;
     using System.Runtime.CompilerServices;
     using DotNetty.Codecs;
@@ -172,7 +171,8 @@ namespace DotNetty.Codecs.Http
         {
             if (this.IsEmpty)
             {
-                return ImmutableList<HeaderEntry<AsciiString, ICharSequence>>.Empty;
+                // return ImmutableList<HeaderEntry<AsciiString, ICharSequence>>.Empty;
+                return new List<HeaderEntry<AsciiString, ICharSequence>>();
             }
             var entriesConverted = new List<HeaderEntry<AsciiString, ICharSequence>>(this.headers.Size);
             foreach(HeaderEntry<AsciiString, ICharSequence> entry in this)

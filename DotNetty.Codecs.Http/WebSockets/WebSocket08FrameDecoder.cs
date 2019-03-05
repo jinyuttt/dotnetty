@@ -9,7 +9,7 @@ namespace DotNetty.Codecs.Http.WebSockets
     using System.Runtime.CompilerServices;
     using System.Threading.Tasks;
     using DotNetty.Buffers;
-    using DotNetty.Common.Internal.Logging;
+    using DotNetty.Logging;
     using DotNetty.Transport.Channels;
 
     using static Buffers.ByteBufferUtil;
@@ -26,7 +26,7 @@ namespace DotNetty.Codecs.Http.WebSockets
             Corrupt
         }
 
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<WebSocket08FrameDecoder>();
+        static readonly Logger Logger = Logger.Singleton;
 
         const byte OpcodeCont = 0x0;
         const byte OpcodeText = 0x1;
@@ -89,9 +89,9 @@ namespace DotNetty.Codecs.Http.WebSockets
                     this.frameRsv = (b & 0x70) >> 4;
                     this.frameOpcode = b & 0x0F;
 
-                    if (Logger.DebugEnabled)
+                    if (Logger.IsDebugEnabled)
                     {
-                        Logger.Debug("Decoding WebSocket Frame opCode={}", this.frameOpcode);
+                        Logger.DebugFormat("Decoding WebSocket Frame opCode={}", this.frameOpcode);
                     }
 
                     this.state = State.ReadingSecond;
@@ -223,9 +223,9 @@ namespace DotNetty.Codecs.Http.WebSockets
                         return;
                     }
 
-                    if (Logger.DebugEnabled)
+                    if (Logger.IsDebugEnabled)
                     {
-                        Logger.Debug("Decoding WebSocket Frame length={}", this.framePayloadLength);
+                        Logger.DebugFormat("Decoding WebSocket Frame length={}", this.framePayloadLength);
                     }
 
                     this.state = State.MaskingKey;

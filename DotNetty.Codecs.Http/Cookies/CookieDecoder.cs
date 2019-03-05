@@ -3,14 +3,13 @@
 
 namespace DotNetty.Codecs.Http.Cookies
 {
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
-
+    using DotNetty.Logging;
     using static CookieUtil;
 
     public abstract class CookieDecoder
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<CookieDecoder>();
+        static readonly Logger Logger = Logger.Singleton;
         protected readonly bool Strict;
 
         protected CookieDecoder(bool strict)
@@ -36,7 +35,7 @@ namespace DotNetty.Codecs.Http.Cookies
             ICharSequence unwrappedValue = UnwrapValue(sequence);
             if (unwrappedValue == null)
             {
-                Logger.Debug("Skipping cookie because starting quotes are not properly balanced in '{}'", sequence);
+                Logger.DebugFormat("Skipping cookie because starting quotes are not properly balanced in '{}'", sequence);
                 return null;
             }
 
@@ -45,9 +44,9 @@ namespace DotNetty.Codecs.Http.Cookies
             int invalidOctetPos;
             if (this.Strict && (invalidOctetPos = FirstInvalidCookieNameOctet(name)) >= 0)
             {
-                if (Logger.DebugEnabled)
+                if (Logger.IsDebugEnabled)
                 {
-                    Logger.Debug("Skipping cookie because name '{}' contains invalid char '{}'", 
+                    Logger.DebugFormat("Skipping cookie because name '{}' contains invalid char '{}'", 
                         name, name[invalidOctetPos]);
                 }
                 return null;
@@ -57,9 +56,9 @@ namespace DotNetty.Codecs.Http.Cookies
 
             if (this.Strict && (invalidOctetPos = FirstInvalidCookieValueOctet(unwrappedValue)) >= 0)
             {
-                if (Logger.DebugEnabled)
+                if (Logger.IsDebugEnabled)
                 {
-                    Logger.Debug("Skipping cookie because value '{}' contains invalid char '{}'",
+                    Logger.DebugFormat("Skipping cookie because value '{}' contains invalid char '{}'",
                         unwrappedValue, unwrappedValue[invalidOctetPos]);
                 }
 

@@ -7,13 +7,13 @@ namespace DotNetty.Codecs.Http.WebSockets
     using System.Collections.Generic;
     using System.Runtime.CompilerServices;
     using DotNetty.Buffers;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
     using DotNetty.Transport.Channels;
 
     public class WebSocket08FrameEncoder : MessageToMessageEncoder<WebSocketFrame>, IWebSocketFrameEncoder
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<WebSocket08FrameEncoder>();
+        static readonly Logger Logger = Logger.Singleton;
 
         const byte OpcodeCont = 0x0;
         const byte OpcodeText = 0x1;
@@ -76,7 +76,7 @@ namespace DotNetty.Codecs.Http.WebSockets
 
             int length = data.ReadableBytes;
 
-            if (Logger.DebugEnabled)
+            if (Logger.IsDebugEnabled)
             {
                 Logger.Debug($"Encoding WebSocket Frame opCode={opcode} length={length}");
             }

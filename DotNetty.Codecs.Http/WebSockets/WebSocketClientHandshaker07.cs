@@ -5,12 +5,12 @@ namespace DotNetty.Codecs.Http.WebSockets
 {
     using System;
     using System.Text;
-    using DotNetty.Common.Internal.Logging;
     using DotNetty.Common.Utilities;
+    using DotNetty.Logging;
 
     public class WebSocketClientHandshaker07 : WebSocketClientHandshaker
     {
-        static readonly IInternalLogger Logger = InternalLoggerFactory.GetInstance<WebSocketClientHandshaker07>();
+        static readonly Logger Logger = Logger.Singleton;
         public static readonly string MagicGuid = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
 
         AsciiString expectedChallengeResponseString;
@@ -49,9 +49,9 @@ namespace DotNetty.Codecs.Http.WebSockets
             byte[] sha1 = WebSocketUtil.Sha1(Encoding.ASCII.GetBytes(acceptSeed));
             this.expectedChallengeResponseString = new AsciiString(WebSocketUtil.Base64String(sha1));
 
-            if (Logger.DebugEnabled)
+            if (Logger.IsDebugEnabled)
             {
-                Logger.Debug("WebSocket version 07 client handshake key: {}, expected response: {}",
+                Logger.DebugFormat("WebSocket version 07 client handshake key: {}, expected response: {}",
                     key, this.expectedChallengeResponseString);
             }
 

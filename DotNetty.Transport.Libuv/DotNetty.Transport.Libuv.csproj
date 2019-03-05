@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>编译.net standard版本</Description>
+    <PackageReleaseNotes>编译.net standard版本</PackageReleaseNotes>
+    <Authors>jinyu成都</Authors>
+    <PackageProjectUrl>https://github.com/jinyuttt/dotnetty.git</PackageProjectUrl>
+    <PackageId>DotNetty.Transport.Libuv.Lib</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

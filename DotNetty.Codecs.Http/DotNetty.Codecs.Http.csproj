@@ -2,11 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>编译.net standard版本</Description>
+    <PackageReleaseNotes>编译.net standard版本</PackageReleaseNotes>
+    <Authors>jinyu成都</Authors>
+    <PackageProjectUrl>https://github.com/jinyuttt/dotnetty.git</PackageProjectUrl>
+    <PackageId>DotNetty.Codecs.Http.Lib</PackageId>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DotNetty.Common\DotNetty.Common.csproj" />
     <ProjectReference Include="..\DotNetty.Handlers\DotNetty.Handlers.csproj" />
+    <ProjectReference Include="..\DotNetty.Logging\DotNetty.Logging.csproj" />
   </ItemGroup>
 
 </Project>

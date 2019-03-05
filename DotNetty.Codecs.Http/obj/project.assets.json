@@ -213,23 +213,13 @@
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
         }
       },
-      "System.Collections.Immutable/1.2.0": {
+      "System.Collections.Immutable/1.5.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
         "compile": {
-          "lib/netstandard1.0/_._": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {}
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.Collections.NonGeneric/4.0.1": {
@@ -1337,90 +1327,90 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "DotNetty.Buffers/1.0.0": {
+      "DotNetty.Buffers.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DotNetty.Common": "1.0.0",
-          "DotNetty.Logging": "1.0.0"
+          "DotNetty.Common.Lib": "1.0.0",
+          "DotNetty.Logging.Lib": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Buffers.dll": {}
+          "bin/placeholder/DotNetty.Buffers.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Buffers.dll": {}
+          "bin/placeholder/DotNetty.Buffers.Lib.dll": {}
         }
       },
-      "DotNetty.Codecs/1.0.0": {
+      "DotNetty.Codecs.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DotNetty.Buffers": "1.0.0",
-          "DotNetty.Transport": "1.0.0"
+          "DotNetty.Buffers.Lib": "1.0.0",
+          "DotNetty.Transport.Lib": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Codecs.dll": {}
+          "bin/placeholder/DotNetty.Codecs.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Codecs.dll": {}
+          "bin/placeholder/DotNetty.Codecs.Lib.dll": {}
         }
       },
-      "DotNetty.Common/1.0.0": {
+      "DotNetty.Common.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DotNetty.Logging": "1.0.0",
+          "DotNetty.Logging.Lib": "1.0.0",
           "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Common.dll": {}
+          "bin/placeholder/DotNetty.Common.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Common.dll": {}
+          "bin/placeholder/DotNetty.Common.Lib.dll": {}
         }
       },
-      "DotNetty.Handlers/1.0.0": {
+      "DotNetty.Handlers.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DotNetty.Codecs": "1.0.0",
-          "DotNetty.Common": "1.0.0",
-          "DotNetty.Logging": "1.0.0",
-          "DotNetty.Transport": "1.0.0"
+          "DotNetty.Codecs.Lib": "1.0.0",
+          "DotNetty.Common.Lib": "1.0.0",
+          "DotNetty.Logging.Lib": "1.0.0",
+          "DotNetty.Transport.Lib": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Handlers.dll": {}
+          "bin/placeholder/DotNetty.Handlers.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Handlers.dll": {}
+          "bin/placeholder/DotNetty.Handlers.Lib.dll": {}
         }
       },
-      "DotNetty.Logging/1.0.0": {
+      "DotNetty.Logging.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "log4net": "2.0.8"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Logging.dll": {}
+          "bin/placeholder/DotNetty.Logging.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Logging.dll": {}
+          "bin/placeholder/DotNetty.Logging.Lib.dll": {}
         }
       },
-      "DotNetty.Transport/1.0.0": {
+      "DotNetty.Transport.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "DotNetty.Buffers": "1.0.0",
-          "DotNetty.Common": "1.0.0",
+          "DotNetty.Buffers.Lib": "1.0.0",
+          "DotNetty.Common.Lib": "1.0.0",
           "dylan.NET.Tasks": "1.4.1.1"
         },
         "compile": {
-          "bin/placeholder/DotNetty.Transport.dll": {}
+          "bin/placeholder/DotNetty.Transport.Lib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotNetty.Transport.dll": {}
+          "bin/placeholder/DotNetty.Transport.Lib.dll": {}
         }
       }
     }
@@ -1486,7 +1476,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1936,21 +1926,27 @@
         "system.collections.concurrent.nuspec"
       ]
     },
-    "System.Collections.Immutable/1.2.0": {
-      "sha512": "Cma8cBW6di16ZLibL8LYQ+cLjGzoKxpOTu/faZfDcx94ZjAGq6Nv5RO7+T1YZXqEXTZP9rt1wLVEONVpURtUqw==",
+    "System.Collections.Immutable/1.5.0": {
+      "sha512": "T5XGQlcHhEO75Qx38GGCUDPdk4n/7yrRmTgy4yczzJV8alPHaxPU55TBC2UFrkQ42bu34sZPfK0dU+nWZUOEJA==",
       "type": "package",
-      "path": "system.collections.immutable/1.2.0",
+      "path": "system.collections.immutable/1.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
         "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.2.0.nupkg.sha512",
-        "system.collections.immutable.nuspec"
+        "system.collections.immutable.1.5.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
@@ -2757,7 +2753,7 @@
       ]
     },
     "System.Net.Http/4.1.0": {
-      "sha512": "QxY0x5iEkwaZqjPJC1EoWrjWnDPEcu7nf69tnfOx32BNb3V5cLvHwDOZDC0Vbx6MGGVOpnSHUtP0UY0lvtCvSg==",
+      "sha512": "Ve8vcneE50S6BpvAzdFYbtcUy5I5q3JMZQYpBV9PLp+ISTr9F26DPUbRSTl0qOlcgFxO1NmJ8JXW3vjTkyL9fA==",
       "type": "package",
       "path": "system.net.http/4.1.0",
       "files": [
@@ -4966,32 +4962,32 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "DotNetty.Buffers/1.0.0": {
+    "DotNetty.Buffers.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Buffers/DotNetty.Buffers.csproj",
       "msbuildProject": "../DotNetty.Buffers/DotNetty.Buffers.csproj"
     },
-    "DotNetty.Codecs/1.0.0": {
+    "DotNetty.Codecs.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Codecs/DotNetty.Codecs.csproj",
       "msbuildProject": "../DotNetty.Codecs/DotNetty.Codecs.csproj"
     },
-    "DotNetty.Common/1.0.0": {
+    "DotNetty.Common.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Common/DotNetty.Common.csproj",
       "msbuildProject": "../DotNetty.Common/DotNetty.Common.csproj"
     },
-    "DotNetty.Handlers/1.0.0": {
+    "DotNetty.Handlers.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Handlers/DotNetty.Handlers.csproj",
       "msbuildProject": "../DotNetty.Handlers/DotNetty.Handlers.csproj"
     },
-    "DotNetty.Logging/1.0.0": {
+    "DotNetty.Logging.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Logging/DotNetty.Logging.csproj",
       "msbuildProject": "../DotNetty.Logging/DotNetty.Logging.csproj"
     },
-    "DotNetty.Transport/1.0.0": {
+    "DotNetty.Transport.Lib/1.0.0": {
       "type": "project",
       "path": "../DotNetty.Transport/DotNetty.Transport.csproj",
       "msbuildProject": "../DotNetty.Transport/DotNetty.Transport.csproj"
@@ -4999,9 +4995,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "DotNetty.Common >= 1.0.0",
-      "DotNetty.Handlers >= 1.0.0",
-      "NETStandard.Library >= 2.0.3"
+      "DotNetty.Common.Lib >= 1.0.0",
+      "DotNetty.Handlers.Lib >= 1.0.0",
+      "DotNetty.Logging.Lib >= 1.0.0",
+      "NETStandard.Library >= 2.0.3",
+      "System.Collections.Immutable >= 1.5.0"
     ]
   },
   "packageFolders": {
@@ -5012,7 +5010,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Codecs.Http\\DotNetty.Codecs.Http.csproj",
-      "projectName": "DotNetty.Codecs.Http",
+      "projectName": "DotNetty.Codecs.Http.Lib",
       "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Codecs.Http\\DotNetty.Codecs.Http.csproj",
       "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
       "outputPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Codecs.Http\\obj\\",
@@ -5031,10 +5029,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "d:\\Program Files\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -5044,6 +5039,9 @@
             },
             "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Handlers\\DotNetty.Handlers.csproj": {
               "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Handlers\\DotNetty.Handlers.csproj"
+            },
+            "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj": {
+              "projectPath": "E:\\Study\\vs\\dotNetty\\dotNetty\\DotNetty.Logging\\DotNetty.Logging.csproj"
             }
           }
         }
@@ -5062,6 +5060,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "System.Collections.Immutable": {
+            "target": "Package",
+            "version": "[1.5.0, )"
           }
         },
         "imports": [
