@@ -171,7 +171,7 @@ namespace DotNetty.Codecs.Http.Multipart
                 }
                 catch (Exception error)
                 {
-                    Logger.WarnFormat("Failed to delete: {} {}", this.fileStream, error);
+                    Logger.WarnFormat("Failed to delete: {0} {1}", this.fileStream, error);
                 }
                 this.fileStream = null;
                 throw new IOException($"Out of size: {this.Size} > {this.DefinedSize}");

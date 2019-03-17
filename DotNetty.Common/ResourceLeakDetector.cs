@@ -70,8 +70,8 @@ namespace DotNetty.Common
 
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("-D{}: {}", PropLevel, level.ToString().ToLower());
-                Logger.DebugFormat("-D{}: {}", PropTargetRecords, TargetRecords);
+                Logger.DebugFormat("-D{}: {0}", PropLevel, level.ToString().ToLower());
+                Logger.DebugFormat("-D{}: {0}", PropTargetRecords, TargetRecords);
             }
         }
 
@@ -158,17 +158,17 @@ namespace DotNetty.Common
         protected void ReportTracedLeak(string type, string records)
         {
             Logger.ErrorFormat(
-                "LEAK: {}.Release() was not called before it's garbage-collected. " +
-                "See http://netty.io/wiki/reference-counted-objects.html for more information.{}",
+                "LEAK: {0}.Release() was not called before it's garbage-collected. " +
+                "See http://netty.io/wiki/reference-counted-objects.html for more information.{1}",
                 type, records);
         }
 
         protected void ReportUntracedLeak(string type)
         {
-            Logger.ErrorFormat("LEAK: {}.release() was not called before it's garbage-collected. " +
+            Logger.ErrorFormat("LEAK: {0}.release() was not called before it's garbage-collected. " +
                 "Enable advanced leak reporting to find out where the leak occurred. " +
                 "To enable advanced leak reporting, " +
-                "specify the JVM option '-D{}={}' or call {}.setLevel() " +
+                "specify the JVM option '-D{}={1}' or call {2}.setLevel() " +
                 "See http://netty.io/wiki/reference-counted-objects.html for more information.",
                 type, PropLevel, DetectionLevel.Advanced.ToString().ToLower(), StringUtil.SimpleClassName(this));
         }

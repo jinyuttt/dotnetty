@@ -26,7 +26,7 @@ namespace DotNetty.Buffers
 
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("-D{}: {}", PropAcquireAndReleaseOnly, AcquireAndReleaseOnly);
+                Logger.DebugFormat("-D{0}: {1}", PropAcquireAndReleaseOnly, AcquireAndReleaseOnly);
             }
         }
 

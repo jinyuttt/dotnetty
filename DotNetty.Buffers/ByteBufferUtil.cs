@@ -29,17 +29,17 @@ namespace DotNetty.Buffers
             if ("unpooled".Equals(allocType, StringComparison.OrdinalIgnoreCase))
             {
                 alloc = UnpooledByteBufferAllocator.Default;
-                Logger.DebugFormat("-Dio.netty.allocator.type: {}", allocType);
+                Logger.DebugFormat("-Dio.netty.allocator.type: {0}", allocType);
             }
             else if ("pooled".Equals(allocType, StringComparison.OrdinalIgnoreCase))
             {
                 alloc = PooledByteBufferAllocator.Default;
-                Logger.DebugFormat("-Dio.netty.allocator.type: {}", allocType);
+                Logger.DebugFormat("-Dio.netty.allocator.type: {0}", allocType);
             }
             else
             {
                 alloc = PooledByteBufferAllocator.Default;
-                Logger.DebugFormat("-Dio.netty.allocator.type: pooled (unknown: {})", allocType);
+                Logger.DebugFormat("-Dio.netty.allocator.type: pooled (unknown: {0})", allocType);
             }
 
             DefaultAllocator = alloc;

@@ -139,7 +139,7 @@ namespace DotNetty.Common.Utilities
             {
                 if (Logger.IsWarnEnabled)
                 {
-                    Logger.WarnFormat("Failed to release a message: {} (decrement: {})", msg, decrement, ex);
+                    Logger.WarnFormat("Failed to release a message: {0} (decrement: {1})", msg, decrement, ex);
                 }
             }
         }
@@ -152,7 +152,7 @@ namespace DotNetty.Common.Utilities
             }
             catch (Exception ex)
             {
-                Logger.WarnFormat("Failed to release a message: {}", msg, ex);
+                Logger.WarnFormat("Failed to release a message: {0}", msg, ex);
             }
         }
 
@@ -164,7 +164,7 @@ namespace DotNetty.Common.Utilities
             }
             catch (Exception ex)
             {
-                Logger.WarnFormat("Failed to release a message: {} (decrement: {})", msg, decrement, ex);
+                Logger.WarnFormat("Failed to release a message: {0} (decrement: {1})", msg, decrement, ex);
             }
         }
 
@@ -191,16 +191,16 @@ namespace DotNetty.Common.Utilities
                     {
                         if (!referenceCounted.Release(decrement))
                         {
-                            Logger.WarnFormat("Non-zero refCnt: {}", FormatReleaseString(referenceCounted, decrement));
+                            Logger.WarnFormat("Non-zero refCnt: {0}", FormatReleaseString(referenceCounted, decrement));
                         }
                         else
                         {
-                            Logger.DebugFormat("Released: {}", FormatReleaseString(referenceCounted, decrement));
+                            Logger.DebugFormat("Released: {0}", FormatReleaseString(referenceCounted, decrement));
                         }
                     }
                     catch (Exception ex)
                     {
-                        Logger.WarnFormat("Failed to release an object: {}", referenceCounted, ex);
+                        Logger.WarnFormat("Failed to release an object: {0}", referenceCounted, ex);
                     }
                 });
             }

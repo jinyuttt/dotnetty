@@ -87,30 +87,30 @@ namespace DotNetty.Buffers
 
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("-Dio.netty.allocator.numHeapArenas: {}", DefaultNumHeapArena);
-                Logger.DebugFormat("-Dio.netty.allocator.numDirectArenas: {}", DefaultNumDirectArena);
+                Logger.DebugFormat("-Dio.netty.allocator.numHeapArenas: {0}", DefaultNumHeapArena);
+                Logger.DebugFormat("-Dio.netty.allocator.numDirectArenas: {0}", DefaultNumDirectArena);
                 if (pageSizeFallbackCause == null)
                 {
-                    Logger.DebugFormat("-Dio.netty.allocator.pageSize: {}", DefaultPageSize);
+                    Logger.DebugFormat("-Dio.netty.allocator.pageSize: {0}", DefaultPageSize);
                 }
                 else
                 {
-                    Logger.DebugFormat("-Dio.netty.allocator.pageSize: {}", DefaultPageSize, pageSizeFallbackCause);
+                    Logger.DebugFormat("-Dio.netty.allocator.pageSize: {0}", DefaultPageSize, pageSizeFallbackCause);
                 }
                 if (maxOrderFallbackCause == null)
                 {
-                    Logger.DebugFormat("-Dio.netty.allocator.maxOrder: {}", DefaultMaxOrder);
+                    Logger.DebugFormat("-Dio.netty.allocator.maxOrder: {0}", DefaultMaxOrder);
                 }
                 else
                 {
-                    Logger.DebugFormat("-Dio.netty.allocator.maxOrder: {}", DefaultMaxOrder, maxOrderFallbackCause);
+                    Logger.DebugFormat("-Dio.netty.allocator.maxOrder: {0}", DefaultMaxOrder, maxOrderFallbackCause);
                 }
-                Logger.DebugFormat("-Dio.netty.allocator.chunkSize: {}", DefaultPageSize << DefaultMaxOrder);
-                Logger.DebugFormat("-Dio.netty.allocator.tinyCacheSize: {}", DefaultTinyCacheSize);
-                Logger.DebugFormat("-Dio.netty.allocator.smallCacheSize: {}", DefaultSmallCacheSize);
-                Logger.DebugFormat("-Dio.netty.allocator.normalCacheSize: {}", DefaultNormalCacheSize);
-                Logger.DebugFormat("-Dio.netty.allocator.maxCachedBufferCapacity: {}", DefaultMaxCachedBufferCapacity);
-                Logger.DebugFormat("-Dio.netty.allocator.cacheTrimInterval: {}", DefaultCacheTrimInterval);
+                Logger.DebugFormat("-Dio.netty.allocator.chunkSize: {0}", DefaultPageSize << DefaultMaxOrder);
+                Logger.DebugFormat("-Dio.netty.allocator.tinyCacheSize: {0}", DefaultTinyCacheSize);
+                Logger.DebugFormat("-Dio.netty.allocator.smallCacheSize: {0}", DefaultSmallCacheSize);
+                Logger.DebugFormat("-Dio.netty.allocator.normalCacheSize: {0}", DefaultNormalCacheSize);
+                Logger.DebugFormat("-Dio.netty.allocator.maxCachedBufferCapacity: {0}", DefaultMaxCachedBufferCapacity);
+                Logger.DebugFormat("-Dio.netty.allocator.cacheTrimInterval: {0}", DefaultCacheTrimInterval);
             }
 
             Default = new PooledByteBufferAllocator(PlatformDependent.DirectBufferPreferred);

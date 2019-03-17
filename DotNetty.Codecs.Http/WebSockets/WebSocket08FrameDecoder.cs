@@ -91,7 +91,7 @@ namespace DotNetty.Codecs.Http.WebSockets
 
                     if (Logger.IsDebugEnabled)
                     {
-                        Logger.DebugFormat("Decoding WebSocket Frame opCode={}", this.frameOpcode);
+                        Logger.DebugFormat("Decoding WebSocket Frame opCode={0}", this.frameOpcode);
                     }
 
                     this.state = State.ReadingSecond;
@@ -225,7 +225,7 @@ namespace DotNetty.Codecs.Http.WebSockets
 
                     if (Logger.IsDebugEnabled)
                     {
-                        Logger.DebugFormat("Decoding WebSocket Frame length={}", this.framePayloadLength);
+                        Logger.DebugFormat("Decoding WebSocket Frame length={0}", this.framePayloadLength);
                     }
 
                     this.state = State.MaskingKey;

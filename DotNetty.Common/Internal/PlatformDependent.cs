@@ -25,7 +25,7 @@ namespace DotNetty.Common.Internal
             UseDirectBuffer = !SystemPropertyUtil.GetBoolean("io.netty.noPreferDirect", true);
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("-Dio.netty.noPreferDirect: {}", !UseDirectBuffer);
+                Logger.DebugFormat("-Dio.netty.noPreferDirect: {0}", !UseDirectBuffer);
             }
         }
 

@@ -35,7 +35,7 @@ namespace DotNetty.Codecs.Http.Cookies
             ICharSequence unwrappedValue = UnwrapValue(sequence);
             if (unwrappedValue == null)
             {
-                Logger.DebugFormat("Skipping cookie because starting quotes are not properly balanced in '{}'", sequence);
+                Logger.DebugFormat("Skipping cookie because starting quotes are not properly balanced in '{0}'", sequence);
                 return null;
             }
 
@@ -46,7 +46,7 @@ namespace DotNetty.Codecs.Http.Cookies
             {
                 if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("Skipping cookie because name '{}' contains invalid char '{}'", 
+                    Logger.DebugFormat("Skipping cookie because name '{0}' contains invalid char '{1}'", 
                         name, name[invalidOctetPos]);
                 }
                 return null;
@@ -58,7 +58,7 @@ namespace DotNetty.Codecs.Http.Cookies
             {
                 if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("Skipping cookie because value '{}' contains invalid char '{}'",
+                    Logger.DebugFormat("Skipping cookie because value '{0}' contains invalid char '{1}'",
                         unwrappedValue, unwrappedValue[invalidOctetPos]);
                 }
 

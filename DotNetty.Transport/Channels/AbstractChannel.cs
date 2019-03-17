@@ -340,7 +340,7 @@ namespace DotNetty.Transport.Channels
                     }
                     catch (Exception ex)
                     {
-                        Logger.WarnFormat("Force-closing a channel whose registration task was not accepted by an event loop: {}", this.channel, ex);
+                        Logger.WarnFormat("Force-closing a channel whose registration task was not accepted by an event loop: {0}", this.channel, ex);
                         this.CloseForcibly();
                         this.channel.closeFuture.Complete();
                         Util.SafeSetFailure(promise, ex, Logger);

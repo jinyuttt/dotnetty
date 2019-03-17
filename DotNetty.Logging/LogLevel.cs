@@ -34,6 +34,7 @@ namespace DotNetty.Logging
         Info,
         Warn,
         Error,
-        Fatal
+        Fatal,
+        Trace
     }
 }

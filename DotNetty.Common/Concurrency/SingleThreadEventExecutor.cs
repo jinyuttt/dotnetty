@@ -103,7 +103,7 @@ namespace DotNetty.Common.Concurrency
                     }
                     catch (Exception ex)
                     {
-                        Logger.ErrorFormat("{}: execution loop failed", this.thread.Name, ex);
+                        Logger.ErrorFormat("{0}: execution loop failed", this.thread.Name, ex);
                         this.executionState = ST_TERMINATED;
                         this.terminationCompletionSource.TrySetException(ex);
                     }

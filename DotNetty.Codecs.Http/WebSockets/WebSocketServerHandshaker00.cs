@@ -61,7 +61,7 @@ namespace DotNetty.Codecs.Http.WebSockets
                     {
                         if (Logger.IsDebugEnabled)
                         {
-                            Logger.DebugFormat("Requested subprotocol(s) not supported: {}", subprotocols);
+                            Logger.DebugFormat("Requested subprotocol(s) not supported: {0}", subprotocols);
                         }
                     }
                     else

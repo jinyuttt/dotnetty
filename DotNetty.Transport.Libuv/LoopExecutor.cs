@@ -160,12 +160,12 @@ namespace DotNetty.Transport.Libuv
             catch (Exception ex)
             {
                 this.loopRunStart.Set();
-                Logger.ErrorFormat("Loop {}:{} run default error.", this.thread.Name, handle, ex);
+                Logger.ErrorFormat("Loop {0}:{1} run default error.", this.thread.Name, handle, ex);
                 this.terminationCompletionSource.TrySetException(ex);
             }
             finally
             {
-                Logger.InfoFormat("Loop {}:{} thread finished.", this.thread.Name, handle);
+                Logger.InfoFormat("Loop {0}:{1} thread finished.", this.thread.Name, handle);
                 this.CleanupAndTerminate();
             }
         }
@@ -253,25 +253,25 @@ namespace DotNetty.Transport.Libuv
             }
             catch (Exception ex)
             {
-                Logger.WarnFormat("{}:{} release error {}", this.thread.Name, handle, ex);
+                Logger.WarnFormat("{0}:{1} release error {2}", this.thread.Name, handle, ex);
             }
 
             SafeDispose(this.timerHandle);
             SafeDispose(this.asyncHandle);
             SafeDispose(this.loop);
-            Logger.InfoFormat("{}:{} disposed.", this.thread.Name, handle);
+            Logger.InfoFormat("{0}:{1} disposed.", this.thread.Name, handle);
         }
 
         static void SafeDispose(IDisposable handle)
         {
             try
             {
-                Logger.InfoFormat("Disposing {}", handle.GetType());
+                Logger.InfoFormat("Disposing {0}", handle.GetType());
                 handle.Dispose();
             }
             catch (Exception ex)
             {
-                Logger.WarnFormat("{} dispose error {}", handle.GetType(), ex);
+                Logger.WarnFormat("{0} dispose error {1}", handle.GetType(), ex);
             }
         }
 

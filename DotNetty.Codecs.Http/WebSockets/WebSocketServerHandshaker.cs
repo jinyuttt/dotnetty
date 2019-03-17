@@ -79,7 +79,7 @@ namespace DotNetty.Codecs.Http.WebSockets
         {
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("{} WebSocket version {} server handshake", channel, this.version);
+                Logger.DebugFormat("{} WebSocket version {0} server handshake", channel, this.version);
             }
 
             IFullHttpResponse response = this.NewHandshakeResponse(req, responseHeaders);

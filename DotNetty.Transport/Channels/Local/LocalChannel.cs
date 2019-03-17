@@ -215,7 +215,7 @@ namespace DotNetty.Transport.Channels.Local
                         }
                         catch (Exception cause)
                         {
-                            Logger.WarnFormat("Releasing Inbound Queues for channels {}-{} because exception occurred!", this, peer, cause);
+                            Logger.WarnFormat("Releasing Inbound Queues for channels {0}-{1} because exception occurred!", this, peer, cause);
 
                             if (peerEventLoop.InEventLoop)
                             {
@@ -307,7 +307,7 @@ namespace DotNetty.Transport.Channels.Local
                 }
                 catch (Exception ex)
                 {
-                    Logger.WarnFormat("Closing Local channels {}-{} because exception occurred!", this, this.peer, ex);
+                    Logger.WarnFormat("Closing Local channels {0}-{1} because exception occurred!", this, this.peer, ex);
                     this.CloseAsync();
                     this.peer.CloseAsync();
                     throw;
@@ -409,7 +409,7 @@ namespace DotNetty.Transport.Channels.Local
             }
             catch (Exception cause)
             {
-                Logger.WarnFormat("Closing Local channels {}-{} because exception occurred!", this, peer, cause);
+                Logger.WarnFormat("Closing Local channels {0}-{1} because exception occurred!", this, peer, cause);
                 this.CloseAsync();
                 peer.CloseAsync();
                 throw;

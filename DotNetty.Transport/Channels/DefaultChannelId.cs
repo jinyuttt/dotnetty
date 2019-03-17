@@ -51,11 +51,11 @@ namespace DotNetty.Transport.Channels
                 if (processId < 0 || processId > MaxProcessId)
                 {
                     processId = -1;
-                    Logger.WarnFormat("-Dio.netty.processId: {} (malformed)", customProcessId);
+                    Logger.WarnFormat("-Dio.netty.processId: {0} (malformed)", customProcessId);
                 }
                 else if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("-Dio.netty.processId: {} (user-set)", processId);
+                    Logger.DebugFormat("-Dio.netty.processId: {0} (user-set)", processId);
                 }
             }
             if (processId < 0)
@@ -63,7 +63,7 @@ namespace DotNetty.Transport.Channels
                 processId = DefaultProcessId();
                 if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("-Dio.netty.processId: {} (auto-detected)", processId);
+                    Logger.DebugFormat("-Dio.netty.processId: {0} (auto-detected)", processId);
                 }
             }
             ProcessId = processId;
@@ -74,11 +74,11 @@ namespace DotNetty.Transport.Channels
                 if (MachineIdPattern.Match(customMachineId).Success)
                 {
                     machineId = ParseMachineId(customMachineId);
-                    Logger.DebugFormat("-Dio.netty.machineId: {} (user-set)", customMachineId);
+                    Logger.DebugFormat("-Dio.netty.machineId: {0} (user-set)", customMachineId);
                 }
                 else
                 {
-                    Logger.WarnFormat("-Dio.netty.machineId: {} (malformed)", customMachineId);
+                    Logger.WarnFormat("-Dio.netty.machineId: {0} (malformed)", customMachineId);
                 }
             }
 
@@ -87,7 +87,7 @@ namespace DotNetty.Transport.Channels
                 machineId = DefaultMachineId();
                 if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("-Dio.netty.machineId: {} (auto-detected)", MacAddressUtil.FormatAddress(machineId));
+                    Logger.DebugFormat("-Dio.netty.machineId: {0} (auto-detected)", MacAddressUtil.FormatAddress(machineId));
                 }
             }
             MachineId = machineId;
@@ -153,7 +153,7 @@ namespace DotNetty.Transport.Channels
                 bestMacAddr = new byte[MacAddressUtil.MacAddressLength];
                 ThreadLocalRandom.Value.NextBytes(bestMacAddr);
                 Logger.WarnFormat(
-                    "Failed to find a usable hardware address from the network interfaces; using random bytes: {}",
+                    "Failed to find a usable hardware address from the network interfaces; using random bytes: {0}",
                     MacAddressUtil.FormatAddress(bestMacAddr));
             }
             return bestMacAddr;

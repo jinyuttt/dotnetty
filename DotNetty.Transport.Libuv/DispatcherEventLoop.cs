@@ -43,7 +43,7 @@ namespace DotNetty.Transport.Libuv
 
             if (Logger.IsInfoEnabled)
             {
-                Logger.InfoFormat("{} ({}) listening on pipe {}.", nameof(DispatcherEventLoop), this.LoopThreadId, this.PipeName);
+                Logger.InfoFormat("{0} ({1}) listening on pipe {2}.", nameof(DispatcherEventLoop), this.LoopThreadId, this.PipeName);
             }
         }
 

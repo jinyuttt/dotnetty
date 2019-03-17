@@ -105,13 +105,13 @@ namespace DotNetty.Transport.Channels
                     {
                         if (Logger.IsDebugEnabled)
                         {
-                            Logger.DebugFormat("An exception {}"
+                            Logger.DebugFormat("An exception {0}"
                                 + "was thrown by a user handler's exceptionCaught() "
                                 + "method while handling the following exception:", error, cause);
                         }
                         else if (Logger.IsWarnEnabled)
                         {
-                            Logger.WarnFormat("An exception '{}' [enable DEBUG level for full stacktrace] "
+                            Logger.WarnFormat("An exception '{0}' [enable DEBUG level for full stacktrace] "
                                 + "was thrown by a user handler's exceptionCaught() "
                                 + "method while handling the following exception:", error, cause);
                         }

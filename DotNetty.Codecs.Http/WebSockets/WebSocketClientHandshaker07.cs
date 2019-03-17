@@ -51,7 +51,7 @@ namespace DotNetty.Codecs.Http.WebSockets
 
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("WebSocket version 07 client handshake key: {}, expected response: {}",
+                Logger.DebugFormat("WebSocket version 07 client handshake key: {0}, expected response: {1}",
                     key, this.expectedChallengeResponseString);
             }
 

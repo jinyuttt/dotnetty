@@ -7,9 +7,14 @@
     <Authors>jinyu成都</Authors>
     <PackageProjectUrl>https://github.com/jinyuttt/dotnetty.git</PackageProjectUrl>
     <PackageId>DotNetty.Codecs.Http.Lib</PackageId>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 

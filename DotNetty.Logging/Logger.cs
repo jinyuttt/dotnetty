@@ -71,7 +71,7 @@ namespace DotNetty.Logging
         }
         #endregion
 
-        #region [ 参数 ]
+            #region [ 参数 ]
 
         public bool IsDebugEnabled
             {
@@ -285,7 +285,7 @@ namespace DotNetty.Logging
             /// <param name="level"></param>  
             /// <param name="format"></param>  
             /// <param name="args"></param>  
-            private void Log(LogLevel level, string format, params object[] args)
+            public void Log(LogLevel level, string format, params object[] args)
             {
                 switch (level)
                 {

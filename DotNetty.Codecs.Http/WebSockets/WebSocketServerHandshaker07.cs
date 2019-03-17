@@ -46,7 +46,7 @@ namespace DotNetty.Codecs.Http.WebSockets
 
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("WebSocket version 07 server handshake key: {}, response: {}.", key, accept);
+                Logger.DebugFormat("WebSocket version 07 server handshake key: {0}, response: {1}.", key, accept);
             }
 
             res.Headers.Add(HttpHeaderNames.Upgrade, HttpHeaderValues.Websocket);
@@ -62,7 +62,7 @@ namespace DotNetty.Codecs.Http.WebSockets
                 {
                     if (Logger.IsDebugEnabled)
                     {
-                        Logger.DebugFormat("Requested subprotocol(s) not supported: {}", subprotocols);
+                        Logger.DebugFormat("Requested subprotocol(s) not supported: {0}", subprotocols);
                     }
                 }
                 else

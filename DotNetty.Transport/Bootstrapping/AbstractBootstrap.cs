@@ -377,12 +377,12 @@ namespace DotNetty.Transport.Bootstrapping
             {
                 if (!option.Set(channel.Configuration))
                 {
-                    logger.WarnFormat("Unknown channel option '{}' for channel '{}'", option.Option, channel);
+                    logger.WarnFormat("Unknown channel option '{0}' for channel '{1}'", option.Option, channel);
                 }
             }
             catch (Exception ex)
             {
-                logger.WarnFormat("Failed to set channel option '{}' with value '{}' for channel '{}'", option.Option, option, channel, ex);
+                logger.WarnFormat("Failed to set channel option '{0}' with value '1{}' for channel '{2}'", option.Option, option, channel, ex);
             }
         }
 

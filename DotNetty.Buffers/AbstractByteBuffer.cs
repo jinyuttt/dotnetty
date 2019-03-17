@@ -40,7 +40,7 @@ namespace DotNetty.Buffers
             CheckAccessible = SystemPropertyUtil.GetBoolean(PropMode, true);
             if (Logger.IsDebugEnabled)
             {
-                Logger.DebugFormat("-D{}: {}", PropMode, CheckAccessible);
+                Logger.DebugFormat("-D{0}: {1}", PropMode, CheckAccessible);
             }
         }
 
