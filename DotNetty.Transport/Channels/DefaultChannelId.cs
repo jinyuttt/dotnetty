@@ -55,7 +55,7 @@ namespace DotNetty.Transport.Channels
                 }
                 else if (Logger.IsDebugEnabled)
                 {
-                    Logger.DebugFormat("-Dio.netty.processId: {0} (user-set)", processId);
+                    Logger.DebugFormat("-Dio.netty.processId:{0} (user-set)", processId);
                 }
             }
             if (processId < 0)

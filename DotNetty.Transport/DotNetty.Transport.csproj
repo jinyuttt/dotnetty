@@ -7,6 +7,7 @@
     <PackageReleaseNotes>编译.net standard版本</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/jinyuttt/dotnetty.git</PackageProjectUrl>
     <PackageId>DotNetty.Transport.Lib</PackageId>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

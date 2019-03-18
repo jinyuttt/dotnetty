@@ -82,7 +82,7 @@ namespace DotNetty.Handlers.Flow
             {
                 if (!this.queue.IsEmpty)
                 {
-                    Logger.DebugFormat($"Non-empty queue: {this.queue}");
+                    Logger.DebugFormat("Non-empty queue:{0}", this.queue);
 
                     if (this.releaseMessages)
                     {
